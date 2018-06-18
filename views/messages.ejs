@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chat Room</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <script src="../assests/particles.min.js"></script>
+        <link rel="stylesheet" href="assests/partical.css" type="text/css">
+        <link href="../assests/css/style.css" rel="stylesheet" />
+    </head>
+    <style>
+       canvas {
+     display: block;
+     vertical-align: bottom;
+   }
+   
+   /* ---- particles.js container ---- */
+   
+   #particles-js {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: #111111;
+     background-image: url("");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: 50% 50%;
+   }
+   
+   /* ---- stats.js ---- */
+   
+   .count-particles{
+     background: #000022;
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 80px;
+     color: #13E8E9;
+     font-size: .8em;
+     text-align: left;
+     text-indent: 4px;
+     line-height: 14px;
+     padding-bottom: 2px;
+     font-family: Helvetica, Arial, sans-serif;
+     font-weight: bold;
+   }
+   
+   .js-count-particles{
+     font-size: 1.1em;
+   }
+   
+   #stats,
+   .count-particles{
+     -webkit-user-select: none;
+   }
+   
+   #stats{
+     border-radius: 3px 3px 0 0;
+     overflow: hidden;
+   }
+   
+   .count-particles{
+     border-radius: 0 0 3px 3px;
+   }
+    </style>
+    <body id="particles-js">
+
+        <div id="mario-chat">
+            <h2>Chat</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Handle" />
+            <input id="message" type="text" placeholder="Message" />
+            <button id="send">Send</button>
+        </div>
+
+
+    </body>
+    <script src="../assests/scripts/chat.js"></script>
+    <script src="../assests/partical-js.js"></script>
+</html>
