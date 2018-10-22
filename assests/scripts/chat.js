@@ -22,7 +22,7 @@ message.addEventListener('keypress', function(){
 socket.on('chat', function(data){
     console.log(data)
     feedback.innerHTML = '';
-    output.innerHTML += `<p> ${data.message} + </p>`;
+    output.innerHTML += `<p> ${data.handle} ${data.message}</p>`;
 });
 
 socket.on('typing', function(data){
